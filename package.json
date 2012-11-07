@@ -1,0 +1,17 @@
+{
+  "name": "mobile-jug",
+  "version": "0.0.1",
+  "author": {
+    "name": "Christophe Hamerling",
+    "email": "christophe.hamerling@gmail.com"
+  },
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "3.0.1",
+    "ejs": "0.8.3",
+    "stylus": "0.30.1",
+    "request": "2.11.4"
+  }
+}

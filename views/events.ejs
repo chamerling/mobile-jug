@@ -1,0 +1,15 @@
+<% var title = 'Events'%>
+<% include head %>
+
+<ul class="list">
+  <% events.forEach(function(event){ %>
+    <li>
+      <a href="/event/<%= event.id%>" data-transition="slide-in">
+        <strong><%= event.title %></strong>
+        <span class="chevron"></span>
+      </a>
+    </li>
+  <% }) %>
+</ul>
+
+<% include foot %>

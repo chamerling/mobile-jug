@@ -1,0 +1,15 @@
+<% var title = 'Speakers'%>
+<% include head %>
+
+<ul class="list">
+  <% speakers.forEach(function(speaker){ %>
+    <li>
+      <a href="/speaker/<%= speaker.id%>" data-transition="slide-in">
+        <strong><%= speaker.fullName %></strong>
+        <span class="chevron"></span>
+      </a>
+    </li>
+  <% }) %>
+</ul>
+
+<% include foot %>
