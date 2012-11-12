@@ -28,6 +28,7 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
+app.get('/home', routes.index);
 app.get('/users', users.list);
 app.get('/event/:id', events.details);
 app.get('/events/next', events.next);
@@ -35,6 +36,8 @@ app.get('/events/all', events.all);
 
 app.get('/speakers/all', speakers.all);
 app.get('/speaker/:id', speakers.details);
+
+//app.get('/members/all', members.all);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
